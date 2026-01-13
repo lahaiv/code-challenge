@@ -186,12 +186,3 @@ Only one service/container is expected.
 
 This exercise is designed to take **30–45 minutes**. Please do not over-engineer.
 
----
-
-## Assumptions
-
-*[Add your assumptions here]*
-
-## Future Improvements
-
-*[Add 2–3 bullets describing what you would improve or add with more time]*
