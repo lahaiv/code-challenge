@@ -1,0 +1,209 @@
+[
+  {
+    "id": "p1",
+    "name": "Downtown Loft",
+    "city": "Nashville",
+    "nightly_price": 180,
+    "max_guests": 4,
+    "available_from": "2026-01-01",
+    "available_to": "2026-02-28"
+  },
+  {
+    "id": "p2",
+    "name": "Music Row Condo",
+    "city": "Nashville",
+    "nightly_price": 220,
+    "max_guests": 2,
+    "available_from": "2026-01-10",
+    "available_to": "2026-03-31"
+  },
+  {
+    "id": "p3",
+    "name": "Family Home Near Downtown",
+    "city": "Nashville",
+    "nightly_price": 260,
+    "max_guests": 6,
+    "available_from": "2026-02-01",
+    "available_to": "2026-04-15"
+  },
+  {
+    "id": "p4",
+    "name": "Broadway Studio",
+    "city": "Nashville",
+    "nightly_price": 150,
+    "max_guests": 2,
+    "available_from": "2026-01-05",
+    "available_to": "2026-01-31"
+  },
+  {
+    "id": "p5",
+    "name": "Luxury Penthouse",
+    "city": "Nashville",
+    "nightly_price": 420,
+    "max_guests": 4,
+    "available_from": "2026-03-01",
+    "available_to": "2026-05-31"
+  },
+  {
+    "id": "p6",
+    "name": "Mountain View Cabin",
+    "city": "Blue Ridge",
+    "nightly_price": 240,
+    "max_guests": 4,
+    "available_from": "2026-01-01",
+    "available_to": "2026-03-31"
+  },
+  {
+    "id": "p7",
+    "name": "Creekside Retreat",
+    "city": "Blue Ridge",
+    "nightly_price": 280,
+    "max_guests": 6,
+    "available_from": "2026-02-01",
+    "available_to": "2026-04-30"
+  },
+  {
+    "id": "p8",
+    "name": "Cozy A-Frame",
+    "city": "Blue Ridge",
+    "nightly_price": 190,
+    "max_guests": 3,
+    "available_from": "2026-01-15",
+    "available_to": "2026-02-28"
+  },
+  {
+    "id": "p9",
+    "name": "Luxury Log Lodge",
+    "city": "Blue Ridge",
+    "nightly_price": 360,
+    "max_guests": 8,
+    "available_from": "2026-03-01",
+    "available_to": "2026-06-01"
+  },
+  {
+    "id": "p10",
+    "name": "Secluded Forest Cabin",
+    "city": "Blue Ridge",
+    "nightly_price": 210,
+    "max_guests": 2,
+    "available_from": "2026-01-01",
+    "available_to": "2026-01-20"
+  },
+  {
+    "id": "p11",
+    "name": "Beachfront Bungalow",
+    "city": "Destin",
+    "nightly_price": 310,
+    "max_guests": 4,
+    "available_from": "2026-02-01",
+    "available_to": "2026-05-01"
+  },
+  {
+    "id": "p12",
+    "name": "Gulf View Condo",
+    "city": "Destin",
+    "nightly_price": 260,
+    "max_guests": 2,
+    "available_from": "2026-01-15",
+    "available_to": "2026-03-15"
+  },
+  {
+    "id": "p13",
+    "name": "Family Beach House",
+    "city": "Destin",
+    "nightly_price": 420,
+    "max_guests": 8,
+    "available_from": "2026-03-01",
+    "available_to": "2026-06-30"
+  },
+  {
+    "id": "p14",
+    "name": "Harbor Studio",
+    "city": "Destin",
+    "nightly_price": 190,
+    "max_guests": 2,
+    "available_from": "2026-01-01",
+    "available_to": "2026-01-31"
+  },
+  {
+    "id": "p15",
+    "name": "Sunset Townhome",
+    "city": "Destin",
+    "nightly_price": 340,
+    "max_guests": 6,
+    "available_from": "2026-02-15",
+    "available_to": "2026-04-30"
+  },
+  {
+    "id": "p16",
+    "name": "Urban Micro Loft",
+    "city": "Austin",
+    "nightly_price": 140,
+    "max_guests": 2,
+    "available_from": "2026-01-01",
+    "available_to": "2026-02-15"
+  },
+  {
+    "id": "p17",
+    "name": "South Congress Bungalow",
+    "city": "Austin",
+    "nightly_price": 230,
+    "max_guests": 4,
+    "available_from": "2026-01-20",
+    "available_to": "2026-04-01"
+  },
+  {
+    "id": "p18",
+    "name": "Modern Hill Country Home",
+    "city": "Austin",
+    "nightly_price": 380,
+    "max_guests": 6,
+    "available_from": "2026-03-01",
+    "available_to": "2026-06-01"
+  },
+  {
+    "id": "p19",
+    "name": "Downtown High-Rise Condo",
+    "city": "Austin",
+    "nightly_price": 270,
+    "max_guests": 3,
+    "available_from": "2026-02-01",
+    "available_to": "2026-03-31"
+  },
+  {
+    "id": "p20",
+    "name": "East Side Artist Loft",
+    "city": "Austin",
+    "nightly_price": 200,
+    "max_guests": 4,
+    "available_from": "2026-01-10",
+    "available_to": "2026-02-28"
+  },
+  {
+    "id": "edge_max_guest_1",
+    "name": "Tiny Tiny Studio (1 Guest Max)",
+    "city": "Nashville",
+    "nightly_price": 99,
+    "max_guests": 1,
+    "available_from": "2026-01-01",
+    "available_to": "2026-01-31"
+  },
+  {
+    "id": "edge_same_day_window",
+    "name": "Day-Use Listing (Same-Day Window)",
+    "city": "Austin",
+    "nightly_price": 120,
+    "max_guests": 2,
+    "available_from": "2026-02-10",
+    "available_to": "2026-02-10"
+  },
+  {
+    "id": "edge_one_night_only",
+    "name": "One-Night Crash Pad",
+    "city": "Blue Ridge",
+    "nightly_price": 75,
+    "max_guests": 2,
+    "available_from": "2026-01-10",
+    "available_to": "2026-01-11"
+  }
+]
