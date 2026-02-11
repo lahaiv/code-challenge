@@ -8,11 +8,11 @@ You'll build a very small OTA-style search app that lets users search for proper
 
 ## Tech Requirements (Required)
 
-- Next.js (App Router)
+- React based (Next.js (App Router)/Tanstack)
 - TypeScript
 - Single container application
-- API implemented using Next.js Route Handlers
-- Frontend uses shadcn/ui components (components are already provided; no CLI setup required)
+- API implemented using Next.js Route Handlers or use a stand alone language
+- Frontend uses a template (shadcn/ui, material) components (components are already provided; no CLI setup required)
 - App must run with Docker:
 
 ```bash
@@ -67,7 +67,7 @@ Your logic should handle these cases correctly.
 
 ### 1) API (Required)
 
-Implement a single endpoint using a Next.js Route Handler:
+Implement a single endpoint using a Next.js Route Handler or a standalone api:
 
 ```
 GET /api/search
