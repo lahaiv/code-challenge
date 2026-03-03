@@ -13,17 +13,12 @@ You'll build a very small OTA-style search app that lets users search for proper
 - Single container application
 - API implemented using Next.js Route Handlers or use a stand alone language
 - Frontend uses a template (shadcn/ui, material) components (components are already provided; no CLI setup required)
-- App must run with Docker:
 
-```bash
-docker compose up --build
-
-```
 
 - App must be accessible at:
 
 ```
-<http://localhost:3000>
+<http://localhost:3003>
 
 ```
 
@@ -52,16 +47,6 @@ export interface Listing {
 export const LISTINGS_SEED: Listing[]
 
 ```
-
-### Important
-
-The seed data intentionally includes edge cases, such as:
-
-- listings with `max_guests = 1`
-- listings where `available_from === available_to`
-- listings that are only bookable for exactly one night
-
-Your logic should handle these cases correctly.
 
 ## What to Build
 
@@ -164,20 +149,10 @@ Form fields:
 
 Styling beyond shadcn defaults is not required.
 
-## Docker
-
-The app must run using:
-
-```bash
-docker compose up --build
-
-```
-
-Only one service/container is expected.
 
 ## Deliverables
 
-1. A working app that runs via Docker Compose
+1. A working app
 2. A short update to this `README.md` including:
     - any assumptions you made
     - 2–3 bullets describing what you would improve or add with more time (scaling, data modeling, caching, etc.)
