@@ -8,11 +8,11 @@ You'll build a very small OTA-style search app that lets users search for proper
 
 ## Tech Requirements (Required)
 
-- React based (Next.js (App Router)/Tanstack)
+- React based (Next.js/Tanstack)
 - TypeScript
 - Single container application
 - API implemented using Next.js Route Handlers or use a stand alone language
-- Frontend uses a template (shadcn/ui, material) components (components are already provided; no CLI setup required)
+- Frontend is custom css/tailwindcss or uses a template library (shadcn/ui, material)
 
 
 - App must be accessible at:
