@@ -3,23 +3,17 @@
 ## Overview
 
 This is a short, practical interview exercise designed to take 30–45 minutes.
-
 You'll build a very small OTA-style search app that lets users search for property listings by city, dates, and guest count. The goal is to demonstrate clear thinking, correctness, and pragmatic tradeoffs — not polish or completeness.
 
 ## Tech Requirements (Required)
 
 - React based (Next.js/Tanstack)
 - TypeScript
-- Single container application
-- API implemented using Next.js Route Handlers or use a stand alone language
 - Frontend is custom css/tailwindcss or uses a template library (shadcn/ui, material)
-
-
 - App must be accessible at:
 
 ```
-<http://localhost:3003>
-
+http://localhost:3003
 ```
 
 ## Provided Seed Data
@@ -27,14 +21,13 @@ You'll build a very small OTA-style search app that lets users search for proper
 You are provided a file:
 
 ```
-lib/listings.seed.ts
-
+listings.json
 ```
 
-It exports:
+It contains an array of listing objects with the following shape:
 
-```tsx
-export interface Listing {
+```ts
+interface Listing {
   id: string
   name: string
   city: string
@@ -43,23 +36,17 @@ export interface Listing {
   available_from: string // ISO date (YYYY-MM-DD)
   available_to: string   // ISO date (YYYY-MM-DD)
 }
-
-export const LISTINGS_SEED: Listing[]
-
 ```
+
+Import and use this file directly as your data source — no API or server required.
 
 ## What to Build
 
-### 1) API (Required)
+### 1) Search Logic (Required)
 
-Implement a single endpoint using a Next.js Route Handler or a standalone api:
+Implement a `searchListings` function (e.g. in `lib/search.ts`) that accepts the following parameters and filters the listings array accordingly:
 
-```
-GET /api/search
-
-```
-
-### Query Parameters
+### Parameters
 
 All parameters are required:
 
@@ -70,7 +57,7 @@ All parameters are required:
 
 ### Validation Rules
 
-Return HTTP `400` with a clear error message if:
+Surface a clear error message to the user if:
 
 - any required parameter is missing
 - a date is invalid
@@ -86,32 +73,30 @@ A listing matches if all of the following are true:
 - `available_from <= check_in`
 - `check_out <= available_to`
 
-> Note: A same-day availability window (available_from === available_to) should not match any valid stay if check_out > check_in is enforced correctly.
-> 
+> Note: A same-day availability window (`available_from === available_to`) should not match any valid stay if `check_out > check_in` is enforced correctly.
 
 ### Pricing
 
 - `nights = number of nights between check_in and check_out`
 - `total_price = nights * nightly_price`
 
-### Response Format
+### Result Shape
 
-```json
+Each matched listing should include:
+
+```ts
 {
-  "results": [
-    {
-      "id": "p1",
-      "name": "Downtown Loft",
-      "city": "Nashville",
-      "nightly_price": 180,
-      "max_guests": 4,
-      "nights": 3,
-      "total_price": 540
-    }
-  ]
+  id: string
+  name: string
+  city: string
+  nightly_price: number
+  max_guests: number
+  nights: number
+  total_price: number
 }
-
 ```
+
+---
 
 ### 2) Frontend (Required)
 
@@ -119,7 +104,7 @@ Build a single page at `/`.
 
 ### Search Form
 
-Use shadcn/ui components (minimum):
+Components (minimum):
 
 - `Input`
 - `Button`
@@ -134,30 +119,30 @@ Form fields:
 
 ### Behavior
 
-- Clicking Search calls `/api/search`
+- Clicking Search runs your `searchListings` function against the imported JSON
 - Render results using Cards showing:
-    - listing name
-    - nightly price
-    - number of nights
-    - total price
+  - listing name
+  - nightly price
+  - number of nights
+  - total price
 
 ### UI States (Required)
 
-- Loading state (e.g. "Searching…")
+- Loading state (e.g. "Searching…") — even a short artificial delay is fine if it helps demonstrate the state
 - Empty state ("No results found")
-- Error state (display API error message)
+- Error state (display the validation error message)
 
 Styling beyond shadcn defaults is not required.
 
+---
 
 ## Deliverables
 
 1. A working app
 2. A short update to this `README.md` including:
-    - any assumptions you made
-    - 2–3 bullets describing what you would improve or add with more time (scaling, data modeling, caching, etc.)
+   - any assumptions you made
+   - 2–3 bullets describing what you would improve or add with more time (e.g. real API layer, pagination, caching, date range UX, etc.)
 
 ## Timebox Guidance
 
 This exercise is designed to take **30–45 minutes**. Please do not over-engineer.
-
